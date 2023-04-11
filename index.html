@@ -8,13 +8,17 @@
 			let selectedEngine = document.querySelector("input[name=engine]:checked");
 
 			let actions = {
-				"google": "https://www.google.com/",
+				"google": "https://www.google.com/search",
 				"duckDuckGo": "https://duckduckgo.com/",
 				"bing": "https://www.bing.com/search",
 				"ask": "https://www.ask.com/web"
 			}
 
-			console.log("function ran");
+			let actionURL = actions[selectedEngine.value];
+
+			const form = document.getElementById("searchForm");
+
+			form.setAttribute("action", actionURL);
 		}
 
 		window.addEventListener("load", function(){
