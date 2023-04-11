@@ -15,6 +15,14 @@ form {
     gap: 20px;
 }
 
+button {
+    font-size: 1.5rem;
+    background-color: rgba(102, 51, 153, 0.656);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
 input[type=text] {
     height: 30px;
     border-radius: 5px;
