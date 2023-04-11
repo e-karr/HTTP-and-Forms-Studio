@@ -5,6 +5,15 @@
 	<script>
 		// TODO: create a handler
 		function setSearchEngine() {
+			let selectedEngine = document.querySelector("input[name=engine]:checked");
+
+			let actions = {
+				"google": "https://www.google.com/",
+				"duckDuckGo": "https://duckduckgo.com/",
+				"bing": "https://www.bing.com/search",
+				"ask": "https://www.ask.com/web"
+			}
+
 			console.log("function ran");
 		}
 
