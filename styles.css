@@ -23,3 +23,11 @@ input[type=text] {
 
     border: 2px dotted rebeccapurple;
 }
+
+#formRadios {
+    display: flex;
+    gap: 20px;
+
+    font-size: 1.5rem;
+    color: rgb(105, 104, 104);
+}
