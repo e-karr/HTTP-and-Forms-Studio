@@ -24,6 +24,13 @@ input[type=text] {
     border: 2px dotted rebeccapurple;
 }
 
+input[type=radio] {
+    height: 20px;
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
 #formRadios {
     display: flex;
     gap: 20px;
