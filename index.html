@@ -25,7 +25,16 @@
 			// TODO: register the handler
 			const form = document.getElementById("searchForm");
 
-			form.addEventListener('submit', setSearchEngine);
+			form.addEventListener('submit', (event) => {
+				let q = document.querySelector("input[name=q]");
+				let engine = document.querySelector("input[name=engine]:checked");
+
+				if (q.value === "" || engine === null) {
+					event.preventDefault();
+				} else {
+					setSearchEngine();
+				}
+			});
 		});
 	</script>
 </head>
@@ -34,9 +43,9 @@
 
 	<form id="searchForm" method="GET">
     <!-- TODO: add form elements -->
-		<input type="text" name="q">
+		<input type="text" name="q" required>
 
-		<label>Google<input type="radio" name="engine" value="google"></label>
+		<label>Google<input type="radio" name="engine" value="google" required></label>
 		<label>DuckDuckGo<input type="radio" name="engine" value="duckDuckGo"></label>
 		<label>Bing<input type="radio" name="engine" value="bing"></label>
 		<label>Ask<input type="radio" name="engine" value="ask"></label>
