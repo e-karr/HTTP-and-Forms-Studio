@@ -4,15 +4,22 @@
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
+		function setSearchEngine() {
+			console.log("function ran");
+		}
+
+		window.addEventListener("load", function(){
+			// TODO: register the handler
+			const form = document.getElementById("searchForm");
+
+			form.addEventListener('submit', setSearchEngine);
+		});
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm">
+	<form id="searchForm" method="GET">
     <!-- TODO: add form elements -->
 		<input type="text" name="q">
 
