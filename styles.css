@@ -13,3 +13,12 @@ form {
     flex-direction: column;
     gap: 20px;
 }
+
+input[type=text] {
+    height: 30px;
+    border-radius: 5px;
+
+    font-size: 1rem;
+
+    border: 2px dotted rebeccapurple;
+}
