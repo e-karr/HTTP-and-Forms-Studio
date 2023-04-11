@@ -2,6 +2,7 @@ body {
     min-height: 100vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -22,6 +23,8 @@ button {
     border: none;
     border-radius: 5px;
 }
+
+
 
 input[type=text] {
     height: 30px;
